@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game {
+  position: relative;
+  background: rgb(28, 106, 179);
+  width: 540px;
+  height: 460px;
+  margin-top: 3rem;
+  margin-left: 20rem;
+  display: grid;
+  grid-template-columns: repeat(7, 65px);
+  grid-template-rows: repeat(6, 65px);
+  grid-gap: 10px;
+}
+.game span {
+  background: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.start {
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-family: monospace;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid #222222;
+  background: none;
+  transition: all 500ms ease-out;
+}
+.start:hover {
+  background: #222222;
+  color: white;
+}
+
+.playerTurn {
+  font-size: 24px;
+  font-family: monospace;
+  position: absolute;
+  top: 33%;
+  left: 1%;
+}
+.rest {
+  position: absolute;
+  top: 87%;
+  left: 38%;
+  font-size: 24px;
+  font-family: monospace;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid #222222;
+  outline: none;
+  background: none;
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+.rest:hover {
+  background: #222222;
+  color: white;
+}
+.win {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 24px;
+  font-family: monospace;
+}
